@@ -1,0 +1,4 @@
+<div class="cardList" *ngFor="let item of List; let i = index">
+    <p>{{item.Descrip}}</p>
+    <button class="btn" (click)="Delete(i)"><i class="fas fa-trash"></i></button>
+</div>

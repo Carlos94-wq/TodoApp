@@ -1,0 +1,16 @@
+<div class="todoCounter">
+    <div class="ctn">
+        <p>{{Todo}} - Todo</p>
+    </div>
+</div>
+<form (ngSubmit)="Registrar(Model)" #Model="ngForm">
+    <div class="form-group">
+        <input 
+            type="text" 
+            required 
+            placeholder="Enter a todo"
+            name="Descrip"
+            [(ngModel)]="form.Descrip">
+        <input type="submit" value="Enter">     
+    </div>
+</form>
